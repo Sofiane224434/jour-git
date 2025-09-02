@@ -1,0 +1,68 @@
+body {
+    background-image: url("images/background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 15px 15px 25px rgb(44, 41, 41);
+}
+
+h2 {
+    display: flex;
+    font-size: 3em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline rgb(179, 241, 252);
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 10px;
+    font-family: cursive;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+.btn {
+    display: flex;
+    justify-content: center; 
+    color: rgb(179, 241, 252);
+    align-items: center; 
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border: 3px solid rgb(179, 241, 252);
+    background-color: #000;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(179, 241, 252);
+}

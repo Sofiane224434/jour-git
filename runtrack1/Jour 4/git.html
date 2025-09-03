@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="git.css">
+    <title>Git commands</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Commande</th>
+                    <th>À quoi ça sert</th>
+                </tr>
+            </thead>
+            <tbody>
+            <!-- Bash -->
+                <tr><td>Bash</td><td><code>pwd</code></td><td>Afficher le chemin du dossier courant.</td></tr>
+                <tr><td>Bash</td><td><code>ls</code></td><td>Lister les fichiers du dossier.</td></tr>
+                <tr><td>Bash</td><td><code>cd mon-dossier</code></td><td>Entrer dans un dossier.</td></tr>
+                <tr><td>Bash</td><td><code>cd ..</code></td><td>Revenir au dossier parent.</td></tr>
+                <tr><td>Bash</td><td><code>cd "C:\Users\Hp\Desktop\git commit"</code></td><td>Aller dans un chemin avec espaces (guillemets requis).</td></tr>
+                <tr><td>Bash</td><td><code>clear</code> / <code>cls</code></td><td>Nettoyer l’écran du terminal (bash / PowerShell).</td></tr>
+
+            <!-- Git - Base -->
+                <tr><td>Git</td><td><code>git init</code></td><td>Initialiser un dépôt Git dans le dossier courant.</td></tr>
+                <tr><td>Git</td><td><code>git add .</code></td><td>Ajouter tous les fichiers à l’index (préparation du commit).</td></tr>
+                <tr><td>Git</td><td><code>git commit -m "message"</code></td><td>Créer un commit local avec un message.</td></tr>
+                <tr><td>Git</td><td><code>git status</code></td><td>Voir l’état des fichiers (modifiés, en attente, etc.).</td></tr>
+                <tr><td>Git</td><td><code>git log --oneline</code></td><td>Consulter l’historique sous forme compacte.</td></tr>
+
+            <!-- Git - Remote & push -->
+                <tr><td>Git</td><td><code>git remote add origin &lt;url&gt;</code></td><td>Lier le dépôt local à GitHub (remote <code>origin</code>).</td></tr>
+                <tr><td>Git</td><td><code>git branch</code></td><td>Afficher la branche courante.</td></tr>
+                <tr><td>Git</td><td><code>git branch -M main</code></td><td>Renommer la branche actuelle en <code>main</code>.</td></tr>
+                <tr><td>Git</td><td><code>git push -u origin main</code></td><td>Envoyer <code>main</code> sur GitHub et créer le suivi (premier push).</td></tr>
+                <tr><td>Git</td><td><code>git push</code></td><td>Envoyer les nouveaux commits vers le dépôt distant.</td></tr>
+                <tr><td>Git</td><td><code>git pull</code></td><td>Récupérer les changements distants.</td></tr>
+
+            <!-- Dépannage rapide -->
+                <tr><td>Fix</td><td><code>git pull origin main --rebase</code></td><td>Intégrer d’abord les changements distants si le push est rejeté (<em>fetch first</em>).</td></tr>
+                <tr><td>Fix</td><td><code>git add .</code> + <code>git commit -m ...</code></td><td>Créer un premier commit si « src refspec main does not match any ».</td></tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
